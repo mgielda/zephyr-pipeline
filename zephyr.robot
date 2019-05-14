@@ -33,3 +33,4 @@ Every Philosopher Should Eat
     Create Machine            artifacts/zephyr.elf    m2gl025_miv    2
     Start Emulation
     Wait For Line On Uart     Philosopher 0 .* EATING     5    treatAsRegex=True
+
