@@ -1,5 +1,6 @@
 #!/bin/bash
 
+git submodule update --init
 mkdir -p artifacts
 cd zephyr
 source zephyr-env.sh
