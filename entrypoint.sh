@@ -1,7 +1,6 @@
 #!/bin/bash
 
 git submodule update --init
-mkdir -p artifacts
 cd zephyr
 source zephyr-env.sh
 cd ../application
@@ -10,7 +9,6 @@ cd build
 cmake -DBOARD=m2gl025_miv ..
 make -j$(nproc)
 cp zephyr/zephyr.elf ../../artifacts
-ls ../../artifacts
 make
 cd ../../
 /opt/renode/tests/test.sh -r artifacts zephyr.robot
