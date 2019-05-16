@@ -34,7 +34,7 @@ Every Philosopher Should Eat
     Execute Command           logFile @${CURDIR}/artifacts/eat.log
     Create Machine            artifacts/zephyr.elf    m2gl025_miv    2
     Start Emulation
-    Wait For Line On Uart     Philosopher 0 .* EATING     5    treatAsRegex=True
+    Wait For Line On Uart     Philosohper 0 .* EATING     5    treatAsRegex=True
     Wait For Line On Uart     Philosopher 1 .* EATING     5    treatAsRegex=True
     Wait For Line On Uart     Philosopher 2 .* EATING     5    treatAsRegex=True
     Wait For Line On Uart     Philosopher 3 .* EATING     5    treatAsRegex=True
