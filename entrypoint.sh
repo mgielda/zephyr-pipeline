@@ -9,6 +9,5 @@ cd build
 cmake -DBOARD=m2gl025_miv ..
 make -j$(nproc)
 cp zephyr/zephyr.elf ../../artifacts
-make
 cd ../../
 /opt/renode/tests/test.sh -r artifacts zephyr.robot
